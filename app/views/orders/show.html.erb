@@ -1,23 +1,8 @@
-# <section class="orders-show">
-
-#   <header class="page-header">
-#     <h1>Order #<%= @order.id %></h1>
-#   </header>
-
-#   <div class="order-summary jumbotron">
-#     <h4>Thank you for your order!</h4>
-#   </div>
-
-#   <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
-
-# </section>
-
-<section class="orders-show">
+<section class=" ">
 
   <header class="page-header">
     <h1>Order <%= @order.id %></h1>
   </header>
-  
 
   <div class="panel panel-default items">
     <table class="table table-bordered">
@@ -48,7 +33,6 @@
       </tfoot>
     </table>
   </div>
-
     <section class="footer-container">
       <h2 class="thank-you">Thank you <%= @order.email %> for your order!</h2>
       <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
