@@ -49,9 +49,9 @@ class OrdersController < ApplicationController
         product: product,
         quantity: quantity,
         item_price: 
-        humanized_money_with_symbol(product.price),
+        product.price,
         total_price: 
-        humanized_money_with_symbol (product.price * quantity)
+        product.price * quantity
       )
     end
     order.save!
