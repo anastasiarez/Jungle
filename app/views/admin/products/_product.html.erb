@@ -14,7 +14,9 @@
     <%= product.price %>
   </td>
   <td>
-    <%= product.quantity %>
+  <% if product.quantity.zero? %>
+  <aside class="sold-out">SOLD OUT!</aside>
+  <% end %>
   </td>
   <td>
     <%= link_to fa_icon('trash'), [:admin, product], class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" } %>
