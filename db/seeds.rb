@@ -169,7 +169,7 @@ cat2.products.create!({
   They rely on self pollination to reproduce. Once pollinated, they grow fairly large, inedible fruits.",
   image: open_asset('plante_9.jpg'),
   quantity: 32,
-  price: 1999.99
+  price: 19.99
 })
 
 cat3.products.create!({
