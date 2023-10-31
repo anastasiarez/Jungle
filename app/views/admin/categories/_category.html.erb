@@ -1,0 +1,4 @@
+<tr>
+  <td colspan="2"><%= category.name %></td>
+  <td colspan="2"><%= Product.where(category_id: category.id).count %></td>
+</tr>
